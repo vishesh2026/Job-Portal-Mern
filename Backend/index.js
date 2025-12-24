@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://job-portal-mern-xa0d.onrender.com"],
   credentials: true,
 };
 
@@ -45,7 +45,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // adjust "frontend" vs "Frontend" to match your actual folder name exactly
-const distPath = path.join(__dirname, "frontend", "dist");
+const distPath = path.join(__dirname, "Frontend", "dist");
 
 app.use(express.static(distPath));
 
